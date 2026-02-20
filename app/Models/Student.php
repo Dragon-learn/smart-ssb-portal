@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    //
+    public function ssb()
+    {
+        return $this->belongsTo(SSB::class);
+    }
 }
